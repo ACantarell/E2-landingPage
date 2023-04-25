@@ -1,3 +1,9 @@
+:root{
+  --bg:#8B8C89;
+  --nav-hover:#274C77;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +11,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #344e41;
+  background-color:var(--bg);
   flex-wrap: wrap;
   width: 100%;
 }
@@ -40,9 +47,9 @@
 }
 
 .nav-links li{
-  border: 2px solid lightslategray;
+  border: 2px solid rgb(118, 135, 152);
   border-radius: 1em;
-  background-color: #a3b18a;
+  background-color: rgb(163, 177, 139);
   padding: 0.3rem;
   letter-spacing: 1px;
   cursor: pointer;
@@ -56,6 +63,6 @@
 }
 
 .nav-links li:hover{
-  background-color: rgb(90, 179, 98);
+  background-color: var(--nav-hover);
   color: black;
  }
