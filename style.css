@@ -12,19 +12,21 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* utilizamos estilos */
+
 html {
   background: linear-gradient(90deg, rgb(106, 48, 147), rgb(160, 68, 255));
+  display: flex;
   flex-wrap: wrap;
-  max-width: 100%;
 }
 
+/* navbar*/
+
 .header {
-  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(85, 33, 128);
-  flex-wrap: wrap;
   width: 100%;
   position: fixed;
   top: 0;
@@ -48,38 +50,38 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 0.5rem;
 }
 
 .serch-form input {
-  width: 300px;
-  height: 30px;
-  padding: 5px;
+  width: 23rem;
+  height: 2rem;
+  padding: 0.5rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 1rem;
 }
 
 .serch-form button {
   display: flex;
   align-items: center;
-  height: 30px;
-  padding: 10px;
+  height: 2rem;
+  padding: 1rem;
   background-color: rgb(163, 177, 139);
   color: rgb(255, 255, 255);
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-weight: 800;
 }
 
 .navbar {
   display: flex;
-  padding: 0 15px;
+  padding: 0 0.5rem;
 }
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
   list-style-type: none;
 }
 
@@ -99,27 +101,20 @@ html {
 .nav-links li:hover {
   background-color: var(--nav-hover);
   color: rgb(24, 3, 3);
-  border-radius: 10px;
+  border-radius: 1.5rem;
 }
 
 .nav-links a:hover {
   color: rgb(255, 255, 255);
 }
 
-main {
-  height: 100%;
-  margin-top: 80px;
-  max-height: 1200px;
-}
-
+/* Contenido de hero */
 #hero {
-  padding: 90px;
-  margin: 10px;
+  padding: 5rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
-  gap: 10rem;
   flex-wrap: wrap;
 }
 
@@ -133,7 +128,7 @@ main {
 .hero-info {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 2rem;
 }
 
 .hero-info h1 {
@@ -152,7 +147,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .hero-button a {
@@ -167,40 +162,40 @@ main {
 }
 
 .hero-button button {
-  padding: 3px 10px;
+  padding: 0.3rem 1rem;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
   font-weight: 700;
 }
 
 .einstein {
-  margin: 20px 0 0 0;
+  margin: 2rem 0 0 0;
   height: 400px;
   width: 300px;
-  border-radius: 30px;
+  border-radius: 3rem;
 }
 
+/* descripcion del negocio */
+
 #description {
-  flex-wrap: wrap;
-  margin: 200px;
+  margin: 20ch;
   text-align: center;
 }
 
 .description-h2 {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 700;
 }
 
+/* card de las materias que brindamos */
+
 #card {
-  padding: 30px;
-  margin: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .card-1 {
@@ -297,6 +292,10 @@ main {
   color: rgb(255, 255, 255);
 }
 
+.card-2-info button:hover {
+  color: rgb(255, 255, 0);
+}
+
 .card-3 {
   display: flex;
   justify-content: center;
@@ -334,3 +333,124 @@ main {
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+}
+
+.card-3-info button:hover {
+  color: rgb(255, 255, 0);
+}
+
+/* beneficios de la empresa  */
+
+#benefits {
+  margin-top: 10rem;
+}
+
+.benefits-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefits-title h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  -webkit-background-clip: text;
+  background-clip:text ;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefits-title p{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.benefits-cards{
+  width: 90%;
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.benefits-card{
+  width: 30%;
+  height: 20rem;
+  background: rgb(236, 195, 214);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.benefits-card i, h3{
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+.benefits-card p{
+  text-align: center;
+}
+
+/* Footer  */
+
+#footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(177, 148, 216);
+}
+
+.footer-iconos-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.footer-iconos{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-iconos h4{
+  font-weight: 900;
+}
+
+.footer-redSocial{
+  margin-top: 4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-img img{
+  width: 25rem;
+  margin: 0.8rem;
+  border-radius: 2rem;
+}
+
+/* usamos media @media para responsive para movil */
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-container {
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    gap: 1rem;
+  }
+}
