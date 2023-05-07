@@ -30,7 +30,7 @@ html {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 1;
 }
 
 .logo {
@@ -404,7 +404,6 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
   background-color: rgb(177, 148, 216);
 }
 
@@ -442,10 +441,19 @@ html {
 /* usamos media @media para responsive para movil */
 
 @media (max-width: 768px) {
+
+  body{
+    background-color:  rgb(160, 68, 255);
+  }
+
   .header {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+  }
+
+  #hero{
+    margin-top: 14rem;
   }
 
   .hero-container {
@@ -453,4 +461,41 @@ html {
     margin-top: 3rem;
     gap: 1rem;
   }
+
+  .hero-info{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .einstein{
+    display: none;
+  }
+
+  #benefits{
+    width: 90%;
+    margin: 1.4rem;
+  }
+
+  .benefits-title{
+    width: 90%;
+    margin: 6rem;
+  }
+
+  .benefits-cards{
+    width: 90%;
+  }
+
+  #fotter{
+    width: 90%;
+  }
+
+  .footer-img{
+    display: none;
+  }
 }
+
+
+/* modificar para que se vea en phone, tablet y descktop */
