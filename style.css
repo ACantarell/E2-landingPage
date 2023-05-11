@@ -635,7 +635,7 @@ html {
   }
 
   .serch {
-    width: 60%;
+    width: 70%;
   }
 
   .logo {
@@ -656,4 +656,12 @@ html {
   .card-3 img {
     display: none;
   }
+
+  .card-1-info button,
+  .card-2-info button,
+  .card-3-info button{
+    border: none;
+  }
+
+
 }
