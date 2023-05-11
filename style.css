@@ -31,6 +31,7 @@ html {
   position: sticky;
   top: 0;
   z-index: 1;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -106,6 +107,17 @@ html {
 
 .nav-links a:hover {
   color: rgb(255, 255, 255);
+}
+
+/* menu hamburguesa  */
+
+.bi-list-nested{
+  font-size: 2rem;
+  display: none;
+}
+
+#toggle-menu{
+  display: none;
 }
 
 /* Contenido de hero */
@@ -455,6 +467,34 @@ html {
     width: 100%;
   }
 
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(51, 51, 51);
+    padding: 10px 0;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+   .nav-links li {
+    margin: 10px 0;
+  }
+
+  .bi-list-nested{
+    display: block;
+    cursor: pointer;
+  }
+
+  #toggle-menu:checked + .nav-links{
+    display: flex;
+  }
+
+
   .header {
     flex-wrap: wrap;
     width: 100%;
@@ -591,88 +631,10 @@ html {
 /* Estilos para dispositivos móviles */
 
 @media screen and (max-width: 480px) {
-  #hero {
-    margin: 1rem;
+
+  .card-1 img, .card-2 img, .card-3 img{
+    display: none;
+
   }
-
-  .hero-container {
-    font-size: 1.5rem;
-  }
-
-  .hero-button a,
-  button {
-    font-size: 1.5rem;
-  }
-
-  #description {
-    margin: 1rem;
-    padding: 2rem;
-  }
-
-  .description-h2 {
-    padding: 1.5rem;
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  #card {
-    margin: 2.5rem;
-    padding: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 7rem;
-  }
-
-  .card-1 {
-    width: 100%;
-    background: none;
-  }
-
-  .card-1-info {
-    border: none;
-  }
-
-  .card-1-info p {
-    font-size: 1.8rem;
-  }
-
-  .card-2 {
-    width: 100%;
-    background: none;
-  }
-
-  .card-2-info {
-    border: none;
-  }
-
-  .card-2-info p {
-    font-size: 1.5rem;
-  }
-
-  .card-3 {
-    width: 100%;
-    background: none;
-  }
-
-  .card-3-info {
-    border: none;
-  }
-
-  .card-3-info p {
-    font-size: 1.5rem;
-  }
-
-  .benefits-title {
-    font-size: 2rem;
-    width: 80%;
-    padding: 2rem;
-    gap: 2rem;
-  }
-
-
 }
+
