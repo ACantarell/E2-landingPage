@@ -18,6 +18,8 @@ html {
   background: rgb(106, 48, 147);
   display: flex;
   /* flex-wrap: wrap; */
+  scroll-behavior:smooth;
+  transition: 0.5s ease-in-out;
 }
 
 /* navbar*/
@@ -145,10 +147,10 @@ html {
 }
 
 .hero-info h1 {
+  font-size: 3rem;
   font-weight: 800;
   text-align: center;
   color: rgb(216, 166, 101);
-  text-decoration: solid;
 }
 
 .hero-info p {
@@ -471,6 +473,7 @@ html {
   }
 
   .nav-links {
+    margin: 0 0.01rem ;
     width:100%;
     flex-direction: column;
     justify-content: center;
@@ -479,6 +482,7 @@ html {
     top: 100%;
     left: 0;
     background-color: rgb(51, 51, 51);
+    border-radius: 5rem;
     padding: 10px 0;
     z-index: 1;
     font-weight: 700;
@@ -486,12 +490,20 @@ html {
   }
   
   .nav-links li {
-    margin: 10px 0;
+    margin: 0.9rem 0;
   }
-
+  
   .nav-links a{
     font-weight: 700;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: padding .8s;
+  }
+  .nav-links li:hover{
+    padding: 1rem;
+  }
+
+  .nav-links a:active{
+    color: rgb(240, 67, 125);
   }
 
   .bi-list-nested {
@@ -499,7 +511,7 @@ html {
     color: bisque;
     cursor: pointer;
   }
-
+  
   #toggle-menu:checked + .nav-links {
     display: flex;
   }
@@ -510,10 +522,7 @@ html {
     justify-content: center;
   }
 
-  .serch-form input{
-    width: 45%;
-  }
-
+  
   #hero {
     margin: 2rem;
   }
@@ -643,6 +652,42 @@ html {
 /* Estilos para dispositivos móviles */
 
 @media screen and (max-width: 480px) {
+
+
+  .nav-links {
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(51, 51, 51);
+    padding: 10px 0;
+    z-index: 1;
+    font-weight: 700;
+    transition: 2s ease-in-out;
+    display: none;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
+  }
+  
+  .nav-links a{
+    font-weight: 700;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .bi-list-nested {
+    display: block;
+    color: bisque;
+    cursor: pointer;
+  }
+  
+  #toggle-menu:checked + .nav-links {
+    display: flex;
+  }
   .header {
     display: flex;
     justify-content: space-around;
@@ -650,6 +695,10 @@ html {
 
   .serch {
     width: 70%;
+  }
+
+  .serch-form input{
+    width: 45%;
   }
 
   .logo {
