@@ -481,7 +481,6 @@ html {
     background-color: rgb(51, 51, 51);
     padding: 10px 0;
     z-index: 1;
-    opacity: 0.9;
     font-weight: 700;
     display: none;
   }
@@ -509,6 +508,10 @@ html {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+  }
+
+  .serch-form input{
+    width: 45%;
   }
 
   #hero {
