@@ -81,6 +81,7 @@ html {
 }
 
 .nav-links {
+  margin: 0 2rem;
   display: flex;
   gap: 1rem;
   list-style-type: none;
@@ -480,13 +481,14 @@ html {
     z-index: 1;
     opacity: 0.9;
   }
-
+  
   .nav-links li {
     margin: 10px 0;
   }
-
+  
   .bi-list-nested {
     display: block;
+    color: bisque;
     cursor: pointer;
   }
 
@@ -665,6 +667,7 @@ html {
   .card-2-info button,
   .card-3-info button{
     border: none;
+    display: flex;
   }
 
 
