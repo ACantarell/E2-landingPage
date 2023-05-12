@@ -642,7 +642,11 @@ html {
     display: none;
   }
 
- 
+  .hero-info p{
+    text-align: center;
+  }
+
+
   .card-1,
   .card-2,
   .card-3{
